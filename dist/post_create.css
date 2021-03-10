@@ -1,0 +1,159 @@
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ECEFF4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: #c1c8d2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #81A1C1;
+}
+
+body {
+    background-color: #ECEFF4;
+}
+
+.navbar {
+    background-color: #2E3440;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.navbar-brand>h1 {
+    color: #ECEFF4;
+    font-weight: 300;
+    padding-left: 20%;
+}
+
+.navbar-nav>li {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 110%;
+    font-weight: 100;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.navbar-nav>a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 110%;
+    font-weight: 100;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.navbar-nav>li:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 110%;
+    font-weight: 600;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.navbar-nav>a:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 110%;
+    font-weight: 600;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.paragraph>p {
+    color: #2E3440;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.paragraph {
+    border-color: white;
+    border-width: thin;
+}
+
+.ss {
+    border-radius: 20px;
+    background: white;
+    padding: 5%;
+    margin: 5%;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+    border-color: #4C566A;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.card.custom {
+    margin-top: 85px;
+    margin-right: 15%;
+    margin-left: 0%;
+    border-radius: 10px;
+}
+
+
+
+.my_button {
+    border-color: #2E3440;
+}
+
+.my_button:hover {
+    background-color: #88C0D0;
+}
+
+small>a {
+    color: #4C566A;
+    text-decoration: none;
+    padding: 0px;
+}
+
+small>a:hover {
+    color: #2E3440;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.paragraph>h2>a {
+    color: #4C566A;
+    text-decoration: none;
+    padding: 0px;
+    font-weight: 500;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.paragraph>h2>a:hover {
+    color: #2E3440;
+    font-weight: 600;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: #2E3440;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.textarea{
+    padding: 1%;
+    width: 58rem;
+    height: 20rem;
+    border-width: .5;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    background-color: #ECEFF4;
+}
