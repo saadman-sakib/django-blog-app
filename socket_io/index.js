@@ -12,7 +12,7 @@ var io = socket(http, {
 });
 
 //server started
-http.listen(7000,'192.168.43.189', () => {
+http.listen('7000', () => {
 	console.log(`listening on port 7000`);
 
 	io.on('connection', (socket) => {

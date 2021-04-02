@@ -209,3 +209,11 @@ small>a:hover {
 .textarea{
     padding: 7%;
 }
+
+.code {
+    
+    color: #8FBCBB;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 20px;
+    font-weight: 500;
+}

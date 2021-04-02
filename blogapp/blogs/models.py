@@ -15,3 +15,12 @@ class Article(models.Model):
     
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'pk':self.pk})
+
+    @property
+    def snippet(self):
+        body_list = self.content.split(' ')
+
+        if len(body_list) > 30:
+            return ' '.join(body_list[:30]) + '......'
+
+        return self.content

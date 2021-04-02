@@ -1,4 +1,4 @@
-const socket = io('192.168.43.189:7000/');
+const socket = io('https://django-socket-server.herokuapp.com/');
 const button = document.getElementById('btn');
 
 button.addEventListener('click', (e) => {

@@ -24,9 +24,6 @@
                 <ul class="navbar-nav mr-auto">
                     {% if request.user.is_authenticated %}
                     <li class="nav-item">
-                        <a style="color: #ECEFF4;" class="nav-link" href="">APIurl</a>
-                    </li>
-                    <li class="nav-item">
                         <a style="color: #ECEFF4;" class="nav-link" href="{% url 'blog-api' %}">API</a>
                     </li>
                     <li class="nav-item">
@@ -64,7 +61,7 @@
                         </h2>
                         <hr>
                         <p class="article-content">
-                            {{ post.content }}
+                            {{ post.snippet }}
                         </p>
                         <small style="color: #7d879b;">
                             <p>{{ post.date_created|date:"F d, Y" }}</p>
@@ -97,7 +94,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js" 
         integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ==" crossorigin="anonymous"></script>
     <script>
-        const socket = io('192.168.43.189:7000/');
+        const socket = io('https://django-socket-server.herokuapp.com/');
         socket.on('chat', msg => {
             const content = document.getElementById('socket')
             content.innerHTML += 

@@ -1,4 +1,3 @@
-
 from rest_framework import viewsets
 from .models import Article
 from .serializers import ArticleSerializer
@@ -55,7 +54,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
 class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Article
-    success_url = '/articles/'
+    success_url = '/'
 
     def test_func(self):
         post = self.get_object()
@@ -63,7 +62,7 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return True
         return False
 
-
+#api
 class ArticleView(viewsets.ModelViewSet):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
